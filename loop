@@ -1,0 +1,103 @@
+Algoritmo "algoritmo loop1"
+// Disciplina   : [Linguagem e L�gica de Programa��o]
+// Professor   : Antonio Carlos Nicolodi 
+// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 29/03/2023
+Var
+numtabuada, result : real
+i : inteiro
+
+
+Inicio
+  i:=1
+  escreva("digite o numero da tabuada: ")
+  leia(numtabuada)
+   enquanto(i<=10)faca
+    result:= numtabuada * i
+    i:= i + 1
+     escreval("resultado: ", result)
+    fimenquanto
+
+FimalgoritmoAlgoritmo "algoritmo loop2"
+// Disciplina   : [Linguagem e L�gica de Programa��o]
+// Professor   : Antonio Carlos Nicolodi 
+// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 29/03/2023
+Var
+numtabuada, result : real
+i : inteiro
+
+
+Inicio
+  i:=1
+  escreva("digite o numero da tabuada: ")
+  leia(numtabuada)
+   repita
+    result:= numtabuada * i
+    i:= i + 1
+     escreval("resultado: ", result)
+    ate (i>10)
+
+Fimalgoritmo
+
+
+Algoritmo "algoritmo loop3"
+// Disciplina   : [Linguagem e L�gica de Programa��o]
+// Professor   : Antonio Carlos Nicolodi 
+// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 29/03/2023
+Var
+numtabuada, result : real
+i : inteiro
+
+
+Inicio
+  i:=1
+  escreva("digite o numero da tabuada: ")
+  leia(numtabuada)
+   para i ate 10 passa 1 faca
+    result:= numtabuada * i
+    i:= i + 1
+     escreval("resultado: ", result)
+    fimpara
+
+Fimalgoritmo
+
+
+
+Algoritmo "algoritmo posto de gasolina"
+// Disciplina   : [Linguagem e L�gica de Programa��o]
+// Professor   : Antonio Carlos Nicolodi 
+// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 29/03/2023
+Var
+ qtdl, valor, preco:real
+ cod: caracter
+
+Inicio
+   escreva("digite A para alcool e G para gasolina: ")
+   leia(cod)
+   escreva("digite a quantidade de litros: ")
+   leia(qtdl)
+    se(cod = A)ENTAO
+     se(qtdl <= 20)ENTAO
+      preco:= qtdl*(4.30-(4.30*3/100))
+      senao
+         preco:= qtdl*(4.30-(4.30*5/100))
+     fimse
+    senao
+     se(cod = G)ENTAO
+       se(qtdl <= 20)ENTAO
+        preco:= qtdl*(5.50-(5.50*6/100))
+        escreva("o valor a ser pago �: ",preco)
+       fimse
+     senao
+      escreva("codigo invalido")
+     fimse
+   fimse
+   
+Fimalgoritmo
